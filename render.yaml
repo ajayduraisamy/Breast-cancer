@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: breast-cancer
+    env: python
+    pythonVersion: "3.8"
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn app:app"
